@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 p {
@@ -46,38 +47,66 @@ h1,h2,h3,h4 {
   font-weight: 400;
   font-style: normal
 }
+
 /*hero*/
 .section-hero {
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
-  height: 500px;
+  height: 700px;
   border-radius: 3px;
   display: inline-block;
-      background-image: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.6)),url(img/hero-pic-1.jpg)
+      background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(img/hero-pic-1.jpg)
 }
 /*navbar*/
 
 
+.header-top {
+    height: 105px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    box-shadow: 0 2px 2px rgba(34, 34, 34, 0.71);
+}
 
-nav{
+.header-top div {
+  display: inline-block;
+}
+
+nav {
+  background-color: #0c3c65;
+  box-shadow: 0 2px 2px rgba(34, 34, 34, 0.71);
+
+}
+
+
+header {
   position: fixed;
-  background-color: #fff;
   width: 100%;
+  color: #0c3c65
 }
 header .row {
     padding-top: 0;
     margin: 0 auto;
     max-width: 100%;
-    box-shadow: 0 2px 2px #efefef;
 }
+
 
 nav li {
   display: inline-block;
-  padding-left: 30px;
+  padding-right: 30px;
 }
-nav {
 
+
+nav li:last-of-type {
+  padding-right: 0;
+
+}
+
+nav ul{
+  margin-left: 120px;
+  color: #fff;
 }
 
 .logo {
@@ -86,15 +115,28 @@ nav {
   width: 350px;
 }
 
+.contacts-header-div {
+  margin-top: 30px;
+    padding-right: 100px;
+}
+
 /*vertically centered black magic https://css-tricks.com/centering-in-the-unknown/*/
 /* The ghost, nudged to maintain perfect centering */
 .verticaly-centered-list {
-
-  height: 105px;
+  height: 50px;
 }
+
 ul {
   margin: 0;
 }
+
+
+.address {
+  padding-left: 40px;
+}
+
+.address span,
+.contact-phone span,
 .verticaly-centered-list:before {
   content: '';
   display: inline-block;
@@ -103,9 +145,32 @@ ul {
   margin-right: -0.25em; /* Adjusts for spacing */
 }
 
+
+
 /* The element to be centered, can also be of any width and height */
 .verticaly-centered-list ul{
   display: inline-block;
   vertical-align: middle;
+}
 
+.address,
+.contact-phone {
+  height: 40px;
+}
+
+.address span,
+.contact-phone span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*icons*/
+.ion-ios-telephone,
+.ion-ios-location {
+  font-size: 34px;
+  color: #0c3c65;
+  display: block;
+  margin-right: 10px;
+  width: 36px;
+  text-align: center;
 }
