@@ -39,6 +39,7 @@ p {
   font-weight: bold;
   display: block;
   margin-top: 15px;
+  -webkit-transition: color 0.1s ease-in-out;
   transition: color 0.1s ease-in-out;
 }
 
@@ -112,14 +113,17 @@ h1 + h4 {
 }
 
 .section-hero-1 {
+  background-image: -webkit-linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(img/hero-pic-1.jpg);
   background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(img/hero-pic-1.jpg)
 }
 
 .section-hero-2 {
+  background-image: -webkit-linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(img/hero-pic-2.jpg);
   background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(img/hero-pic-2.jpg)
 }
 
 .section-hero-3 {
+  background-image: -webkit-linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(img/hero-pic-3.jpg);
   background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(img/hero-pic-3.jpg)
 }
 
@@ -138,6 +142,7 @@ h1 + h4 {
     overflow: hidden;
     z-index: 2;
     box-shadow: 0 2px 2px rgba(34, 34, 34, 0.71);
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 
@@ -187,12 +192,14 @@ nav ul{
   padding: 10px;
   margin-left: 100px;
   width: 350px;
-  transition: width 0.2s;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
 }
 
 .contacts-header-div {
   margin-top: 30px;
   padding-right: 100px;
+  -webkit-transition: margin 0.3s;
   transition: margin 0.3s;
 }
 
@@ -289,6 +296,7 @@ ul {
   background-color: #0c3c65;
   color: #fff;
   padding: 10px;
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.3s ease-in-out;
   transition: color 0.2s ease-in-out, border-color 0.3s ease-in-out;
 }
 
@@ -304,6 +312,7 @@ ul {
   color: #0c3c65;
   padding: 10px;
   background-color: #fff;
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.3s ease-in-out;
   transition: color 0.2s ease-in-out, border-color 0.3s ease-in-out;
 
 }
@@ -319,6 +328,7 @@ ul {
 .secondary-link {
   border: 1px solid #fff;
   padding: 10px;
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.3s ease-in-out;
   transition: color 0.2s ease-in-out, border-color 0.3s ease-in-out;
 }
 
