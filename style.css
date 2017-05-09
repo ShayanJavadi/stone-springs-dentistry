@@ -108,6 +108,7 @@ h1 + h4 {
   height: 700px;
   border-radius: 3px;
   display: inline-block;
+  opacity: 1;
 }
 
 .section-hero-1 {
@@ -121,6 +122,12 @@ h1 + h4 {
 .section-hero-3 {
   background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(img/hero-pic-3.jpg)
 }
+
+.loading {
+  opacity: 0;
+}
+
+
 /*navbar*/
 
 
@@ -131,6 +138,7 @@ h1 + h4 {
     overflow: hidden;
     z-index: 2;
     box-shadow: 0 2px 2px rgba(34, 34, 34, 0.71);
+    transition: all 0.5s;
 }
 
 .header-top div {
@@ -179,12 +187,33 @@ nav ul{
   padding: 10px;
   margin-left: 100px;
   width: 350px;
+  transition: width 0.2s;
 }
 
 .contacts-header-div {
   margin-top: 30px;
-    padding-right: 100px;
+  padding-right: 100px;
+  transition: margin 0.3s;
 }
+
+/*mini nav on scroll down*/
+header-top-mini .logo {
+    /* height: 0; */
+    width: 100px;
+}
+
+.header-top-mini .logo {
+    width: 200px;
+}
+
+.header-top-mini .contacts-header-div {
+    margin-top: 5px;
+}
+
+.header-top.header-top-mini {
+    height: 60px;
+}
+
 
 /*vertically centered black magic https://css-tricks.com/centering-in-the-unknown/*/
 /* The ghost, nudged to maintain perfect centering */
@@ -349,4 +378,47 @@ float: right;
 
 .insurances div {
   min-height: 110px;
+}
+
+
+/*fadeins*/
+
+.fadein-fast {
+  -webkit-animation: fadein .3s; /* Safari, Chrome and Opera > 12.1 */ /* Firefox < 16 */ /* Internet Explorer */ /* Opera < 12.1 */
+          animation: fadein .3s;
+          z-index: -3;
+}
+header {
+  z-index: 99999;
+}
+
+.fadein{
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */ /* Firefox < 16 */ /* Internet Explorer */ /* Opera < 12.1 */
+            animation: fadein 2s;
+
+}
+
+.fadein2-3{
+    -webkit-animation: fadein 2.3s; /* Safari, Chrome and Opera > 12.1 */ /* Firefox < 16 */ /* Internet Explorer */ /* Opera < 12.1 */
+            animation: fadein 2.3s;
+}
+.fadein2-6{
+    -webkit-animation: fadein 2.6s; /* Safari, Chrome and Opera > 12.1 */ /* Firefox < 16 */ /* Internet Explorer */ /* Opera < 12.1 */
+            animation: fadein 2.6s;
+}
+.fadein3{
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */ /* Firefox < 16 */ /* Internet Explorer */ /* Opera < 12.1 */
+            animation: fadein 3s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
