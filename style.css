@@ -17,6 +17,11 @@
   background-color: #f8f7f7;
 }
 
+.section-blue {
+  background-color: #0c3c65;
+  color: #fff;
+}
+
 section {
   padding: 60px 0 60px;
 }
@@ -26,13 +31,27 @@ p {
   font-size: 18px;
   line-height: 1.58;
   letter-spacing: -.003em;
-  text-align: justify;
+  text-align: center;
+}
+
+.read-more {
+  color: #0c3c65;
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+  transition: color 0.1s ease-in-out;
+}
+
+.read-more:active,
+.read-more:hover {
+  color: #1372c3;
 }
 
 .long-copy {
   width: 70%;
   margin: 0 auto;
   padding-bottom: 30px;
+  text-align: justify;
 }
 
 body {
@@ -69,18 +88,38 @@ h1,h2,h3,h4 {
 h1 {
   text-transform: capitalize;
   font-weight: 400;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
+h1 + h4 {
+  padding-bottom: 20px;
+}
+
+.header-with-subtext {
+  padding-bottom: 0;
+}
 /*hero*/
-.section-hero {
+.section-hero-1,
+.section-hero-2,
+.section-hero-3 {
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
   height: 700px;
   border-radius: 3px;
   display: inline-block;
-      background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(img/hero-pic-1.jpg)
+}
+
+.section-hero-1 {
+  background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(img/hero-pic-1.jpg)
+}
+
+.section-hero-2 {
+  background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(img/hero-pic-2.jpg)
+}
+
+.section-hero-3 {
+  background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(img/hero-pic-3.jpg)
 }
 /*navbar*/
 
