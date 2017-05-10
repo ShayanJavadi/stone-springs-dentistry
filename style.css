@@ -136,6 +136,47 @@ h1 + h4 {
   opacity: 0;
 }
 
+.hero-text-container {
+  position: absolute;
+  color: #fff;
+  bottom: 15em;
+  left: 7em;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+  text-align: left;
+}
+
+.hero-text-container p {
+  text-align: left
+}
+
+
+/*can't tell if elegant or hack*/
+/*basically the divs are hiddene until the matching section hero comes around */
+.section-hero-1-text p,
+.section-hero-1-text h1,
+.section-hero-2-text p,
+.section-hero-2-text h1,
+.section-hero-3-text p,
+.section-hero-3-text h1 {
+  opacity: 0;
+  transition: opacity 0.2s;
+  display: none;
+}
+
+.section-hero-1 .section-hero-1-text p,
+.section-hero-1 .section-hero-1-text h1,
+.section-hero-2 .section-hero-2-text p,
+.section-hero-2 .section-hero-2-text h1,
+.section-hero-3 .section-hero-3-text p,
+.section-hero-3 .section-hero-3-text h1 {
+  opacity: 1;
+  display: block;
+}
+
+
 
 /*navbar*/
 
@@ -199,7 +240,7 @@ nav ul{
   margin-left: 100px;
   width: 350px;
   -webkit-transition: width 0.3s;
-  transition: width 0.3s;
+  transition: width 0.3s, transform 0.3s;
 }
 
 img {
@@ -217,6 +258,7 @@ img {
 
 .header-top-mini .logo {
     width: 200px;
+
 }
 
 .header-top-mini .contacts-header-div {
@@ -458,11 +500,11 @@ float: right;
 /*services*/
 .services-slide {
   margin: 0 auto;
-  background-color: #f8f7f7;
+  background-color: #fff;
   color: #222;
   width: 80%;
   border: 1px solid #0c3c65;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 
 .services-slide p {
@@ -485,7 +527,6 @@ float: right;
   color: #0c3c65;
   background-color: transparent;
   border: 1px solid #0c3c65;
-
   padding: 10px;
   font-size: 90%;
   text-transform: uppercase;
