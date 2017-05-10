@@ -1,5 +1,6 @@
 /*Colors*/
 /*primary color: #0c3c65*/
+/*primary light: #1372c3*/
 
 
 /*gray background: #f8f7f7*/
@@ -54,6 +55,10 @@ p {
   padding-bottom: 30px;
   text-align: justify;
 }
+
+
+
+
 
 body {
     font-family: 'Lato', sans-serif;
@@ -135,6 +140,7 @@ h1 + h4 {
 /*navbar*/
 
 
+
 .header-top {
     height: 105px;
     background-color: #fff;
@@ -196,6 +202,10 @@ nav ul{
   transition: width 0.3s;
 }
 
+img {
+   image-rendering: optimizeQuality;
+}
+
 .contacts-header-div {
   margin-top: 30px;
   padding-right: 100px;
@@ -204,10 +214,6 @@ nav ul{
 }
 
 /*mini nav on scroll down*/
-header-top-mini .logo {
-    /* height: 0; */
-    width: 100px;
-}
 
 .header-top-mini .logo {
     width: 200px;
@@ -221,7 +227,9 @@ header-top-mini .logo {
     height: 60px;
 }
 
-
+img {
+  image-rendering: auto;
+}
 /*vertically centered black magic https://css-tricks.com/centering-in-the-unknown/*/
 /* The ghost, nudged to maintain perfect centering */
 .verticaly-centered-list {
@@ -286,6 +294,25 @@ ul {
   margin-right: 10px;
   width: 36px;
   text-align: center;
+}
+
+
+.ion-android-arrow-dropleft-circle,
+.ion-android-arrow-dropright-circle {
+  font-size: 30px;
+  color: #0c3c65;
+  display: block;
+  width: 36px;
+  text-align: center;
+  transition: color 0.2s;
+}
+
+.ion-android-arrow-dropleft-circle:hover,
+.ion-android-arrow-dropleft-circle:active,
+.ion-android-arrow-dropright-circle:hover,
+.ion-android-arrow-dropright-circle:active {
+  color: #1372c3;
+  cursor: pointer;
 }
 
 
@@ -390,6 +417,79 @@ float: right;
   min-height: 110px;
 }
 
+
+/*reviews*/
+
+.review {
+  width: 40%;
+  background-color: #fff;
+  margin: 0 auto;
+
+}
+
+.review-copy {
+  padding: 50px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  text-align: justify;
+}
+
+.review-paragraph {
+  font-size: 15px;
+}
+
+
+
+.reviewer {
+  font-weight:  bold;
+  display: block;
+  text-align: left;
+}
+
+.review-date {
+  font-weight: lighter;
+}
+
+.review-stars {
+  font-size: 24px;
+  color: #e7711b;
+}
+
+/*services*/
+.services-slide {
+  margin: 0 auto;
+  background-color: #f8f7f7;
+  color: #222;
+  width: 80%;
+  border: 1px solid #0c3c65;
+  padding-bottom: 15px;
+}
+
+.services-slide p {
+  padding: 10px;
+  font-size: 90%;
+}
+
+.services-slide h4 {
+  margin: 0;
+  padding-top: 10px;
+}
+
+.services-slide img {
+  opacity: .8;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.services-learn-more {
+  color: #0c3c65;
+  background-color: transparent;
+  border: 1px solid #0c3c65;
+
+  padding: 10px;
+  font-size: 90%;
+  text-transform: uppercase;
+}
 
 /*fadeins*/
 

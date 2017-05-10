@@ -1,5 +1,22 @@
 //waypoints
 
+
+//siema scroller for reviews
+const mySiema = new Siema({
+  loop: true
+});
+
+document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
+document.querySelector('.next').addEventListener('click', () => mySiema.next());
+
+
+const siemaServices = document.querySelector('.siema-services');
+const siemaTwo = new Siema({
+  loop: true,
+  selector: siemaServices,
+  perPage: 3
+})
+
 let lastScrollTop = 0;
 
 class NavControl {
