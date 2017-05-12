@@ -1,5 +1,7 @@
 /*Colors*/
 /*primary color: #0c3c65*/
+/*primary color dakr 1: #0a3355*/
+/*primary color dakr 2: #082b47*/
 /*primary light: #1372c3*/
 
 
@@ -24,7 +26,7 @@
 }
 
 section {
-  padding: 60px 0 60px;
+  padding: 75px 0 60px;
 }
 
 p {
@@ -59,7 +61,6 @@ p {
 
 
 
-
 body {
     font-family: 'Lato', sans-serif;
     letter-spacing: 0;
@@ -70,6 +71,12 @@ body {
     color: rgba(0,0,0,.8);
     font-size: 18px;
     line-height: 1.4
+}
+
+
+li {
+  display: inline-block;
+  list-style: none;
 }
 
 menu,ol,ul {
@@ -94,13 +101,16 @@ h1,h2,h3,h4 {
 h1 {
   text-transform: capitalize;
   font-weight: 400;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 h1 + h4 {
   padding-bottom: 20px;
 }
 
+h1 + h5 {
+  padding-bottom: 30px;
+}
 .header-with-subtext {
   padding-bottom: 0;
 }
@@ -114,22 +124,55 @@ h1 + h4 {
   height: 700px;
   border-radius: 3px;
   display: inline-block;
-  opacity: 1;
 }
 
+.slider--js {
+  opacity: 0;
+}
+
+.slider-buttons {
+  position: absolute;
+    color: #fff;
+    bottom: 10%;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+    text-align: left;
+}
+
+
+.slider-buttons .nav-dot {
+  display: inline-block;
+  background: #fff;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  margin: 3px;
+  cursor: pointer;
+  box-shadow: 0 2px 2px rgba(34, 34, 34, 0.91);
+
+}
+
+.slider-buttons .nav-dot.active {
+  background: #0c3c65;
+
+}
+
+
 .section-hero-1 {
-  background-image: -webkit-linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(img/hero-pic-1.jpg);
-  background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(img/hero-pic-1.jpg)
+  background-image: -webkit-linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.85)),url(img/hero-pic-1.jpg);
+  background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.85)),url(img/hero-pic-1.jpg)
 }
 
 .section-hero-2 {
-  background-image: -webkit-linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(img/hero-pic-2.jpg);
-  background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(img/hero-pic-2.jpg)
+  background-image: -webkit-linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.85)),url(img/hero-pic-2.jpg);
+  background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.85)),url(img/hero-pic-2.jpg)
 }
 
 .section-hero-3 {
-  background-image: -webkit-linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(img/hero-pic-3.jpg);
-  background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(img/hero-pic-3.jpg)
+  background-image: -webkit-linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.85)),url(img/hero-pic-3.jpg);
+  background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.85)),url(img/hero-pic-3.jpg)
 }
 
 .loading {
@@ -148,30 +191,79 @@ h1 + h4 {
   text-align: left;
 }
 
-.hero-text-container p {
-  text-align: left
+
+.hero-text-container p,
+.hero-text-container a {
+  color: rgba(249, 247, 247, 0.88);
+  text-align: left;
+  padding-left: 45px;
 }
 
+.hero-text-container h1 {
+  color: #fff;
+  text-align: left;
+  padding-left: 30px;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+}
+
+.section-hero-1,
+.section-hero-2,
+.section-hero-3 {
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 700px;
+  border-radius: 3px;
+  display: inline-block;
+  opacity: 1;
+}
+.hero-button {
+  background-color: #fff;
+  border: 3px solid #fff;
+  color: #082b47;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 18px 22px;
+  border-radius: 2px;
+  min-width: 100px;
+  transition: backgound-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  letter-spacing: 0.05 em;
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  background-color: transparent;
+  color: #fff;
+}
 
 /*can't tell if elegant or hack*/
 /*basically the divs are hiddene until the matching section hero comes around */
-.section-hero-1-text p,
 .section-hero-1-text h1,
-.section-hero-2-text p,
+.section-hero-1-text p,
+.section-hero-1-text a,
 .section-hero-2-text h1,
+.section-hero-2-text p,
+.section-hero-2-text a,
+.section-hero-3-text h1,
 .section-hero-3-text p,
-.section-hero-3-text h1 {
+.section-hero-3-text a {
   opacity: 0;
-  transition: opacity 0.2s;
   display: none;
+  transition: opacity 0.2s;
 }
 
-.section-hero-1 .section-hero-1-text p,
+
 .section-hero-1 .section-hero-1-text h1,
-.section-hero-2 .section-hero-2-text p,
+.section-hero-1 .section-hero-1-text p,
+.section-hero-1 .section-hero-1-text a,
 .section-hero-2 .section-hero-2-text h1,
+.section-hero-2 .section-hero-2-text p,
+.section-hero-2 .section-hero-2-text a,
+.section-hero-3 .section-hero-3-text h1,
 .section-hero-3 .section-hero-3-text p,
-.section-hero-3 .section-hero-3-text h1 {
+.section-hero-3 .section-hero-3-text a {
   opacity: 1;
   display: block;
 }
@@ -327,6 +419,7 @@ ul {
 }
 
 /*icons*/
+
 .ion-ios-telephone,
 .ion-ios-location,
 .ion-ios-clock {
@@ -341,10 +434,10 @@ ul {
 
 .ion-android-arrow-dropleft-circle,
 .ion-android-arrow-dropright-circle {
-  font-size: 30px;
+  font-size: 33px;
   color: #0c3c65;
   display: block;
-  width: 36px;
+  width: 40px;
   text-align: center;
   transition: color 0.2s;
 }
@@ -357,7 +450,23 @@ ul {
   cursor: pointer;
 }
 
+.arrowkeys {
+  margin-top: 20px;
+}
 
+.prev-services,
+.next-services {
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.prev-services:hover,
+.prev-services:active,
+.next-services:hover,
+.next-services:active {
+  color: #1372c3;
+}
 /*anchors*/
 
 .primary-link {
@@ -376,14 +485,28 @@ ul {
   background-color: #0c3c65;
 }
 
-.footer-link {
-  border: 1px solid #0c3c65;
-  color: #0c3c65;
-  padding: 10px;
-  background-color: #fff;
-  -webkit-transition: color 0.2s ease-in-out, border-color 0.3s ease-in-out;
-  transition: color 0.2s ease-in-out, border-color 0.3s ease-in-out;
+footer {
+  box-shadow: inset 0 10px 10px -5px #0d1116;
 
+}
+
+.section-map h1 {
+  padding-bottom: 40px;
+}
+
+.footer-button-wrap {
+  margin-top: 85px;
+}
+
+.footer-hero-button {
+  border:2px solid #0c3c65;
+  color: #fff;
+  background-color: #0c3c65;
+  margin-top: 20px;
+}
+.footer-hero-button:hover,
+.footer-hero-button:active {
+  color: #0c3c65;
 }
 
 .footer-link:hover,
@@ -449,6 +572,10 @@ float: right;
 }
 
 /*insurances*/
+.section-insurances p {
+  text-align: center;
+}
+
 .insurances img{
   max-width: 200px;
   vertical-align: middle;
@@ -533,6 +660,9 @@ float: right;
 }
 
 /*fadeins*/
+
+
+
 
 .fadein-fast {
   -webkit-animation: fadein .3s; /* Safari, Chrome and Opera > 12.1 */ /* Firefox < 16 */ /* Internet Explorer */ /* Opera < 12.1 */
