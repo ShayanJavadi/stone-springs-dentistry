@@ -3,7 +3,7 @@
 
 //siema scroller for reviews
 const mySiema = new Siema({
-  duration: 700,
+  duration: 500,
   loop: true
 });
 
