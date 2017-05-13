@@ -77,7 +77,6 @@ class Slider {
       }
       //iterate once
       _this.currentSlide++;
-      console.log(_this.currentSlide);
       //add the next slide
       _this.slider.classList.add("section-hero-" + _this.currentSlide);
       //make navdot linked to this new slide active
@@ -109,7 +108,6 @@ class Slider {
   }
 
   goTo(requestedSlide) {
-      console.log(requestedSlide);
      //stop current interval loop
      clearInterval(this.intervalLoop);
 
