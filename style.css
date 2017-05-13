@@ -134,8 +134,9 @@ h1 + h4 {
 .slider-buttons {
   position: absolute;
     color: #fff;
-    bottom: 10%;
+    top: 85%;
     left: 48%;
+    height: 100%;
     margin: 0;
     padding: 0;
     z-index: 1000;
@@ -197,9 +198,10 @@ h1 + h4 {
 .hero-text-container {
   position: absolute;
   color: #fff;
-  bottom: 37%;
+  top: 45%;
   left: 8%;
   width: 80%;
+  height: 100%;
   margin: 0;
   padding: 0;
   z-index: 1000;
