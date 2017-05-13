@@ -135,12 +135,14 @@ h1 + h4 {
   position: absolute;
     color: #fff;
     top: 85%;
-    left: 48%;
-    height: 100%;
+    left: 91%;
+    width: 1300px;
     margin: 0;
     padding: 0;
     z-index: 1000;
     text-align: left;
+    transform: translateX(-50%) translateY(calc(-50%));
+
 }
 
 @-moz-document url-prefix() {
@@ -198,14 +200,14 @@ h1 + h4 {
 .hero-text-container {
   position: absolute;
   color: #fff;
-  top: 45%;
-  left: 8%;
-  width: 80%;
-  height: 100%;
+  top: 53%;
+  left: 50%;
+  width: 1300px;
   margin: 0;
   padding: 0;
   z-index: 1000;
   text-align: left;
+  transform: translateX(-50%) translateY(calc(-50% - .5px));
 }
 
 
