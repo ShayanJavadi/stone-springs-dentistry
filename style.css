@@ -109,7 +109,7 @@ h1 + h4 {
   padding-bottom: 20px;
 }
 
-h1 + p {
+.services-long-copy {
   padding-bottom: 30px;
 }
 .header-with-subtext {
@@ -134,7 +134,7 @@ h1 + p {
 .slider-buttons {
   position: absolute;
     color: #fff;
-    bottom: 4em;
+    bottom: 10%;
     left: 48%;
     margin: 0;
     padding: 0;
@@ -144,7 +144,7 @@ h1 + p {
 
 @-moz-document url-prefix() {
   .slider-buttons {
-    bottom: 5em;
+    bottom: 13%;
   }
 }
 
@@ -197,8 +197,8 @@ h1 + p {
 .hero-text-container {
   position: absolute;
   color: #fff;
-  bottom: 15em;
-  left: 7em;
+  bottom: 37%;
+  left: 8%;
   width: 80%;
   margin: 0;
   padding: 0;
