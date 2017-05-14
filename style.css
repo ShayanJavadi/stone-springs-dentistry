@@ -127,6 +127,23 @@ h1 + h4 {
   display: inline-block;
 }
 
+.section-hero-1 {
+  background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,.2)),to(rgba(0,0,0,.85))),url(img/hero-pic-1.jpg);
+  background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.85)),url(img/hero-pic-1.jpg)
+}
+
+
+.section-hero-2 {
+  background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,.2)),to(rgba(0,0,0,.85))),url(img/hero-pic-2.jpg);
+  background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.85)),url(img/hero-pic-2.jpg)
+}
+
+.section-hero-3 {
+  background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,.2)),to(rgba(0,0,0,.85))),url(img/hero-pic-3.jpg);
+  background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.85)),url(img/hero-pic-3.jpg)
+}
+
+
 .slider--js {
   opacity: 0;
 }
@@ -177,20 +194,6 @@ h1 + h4 {
   background: #1372c3
 }
 
-.section-hero-1 {
-  background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,.2)),to(rgba(0,0,0,.85))),url(img/hero-pic-1.jpg);
-  background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.85)),url(img/hero-pic-1.jpg)
-}
-
-.section-hero-2 {
-  background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,.2)),to(rgba(0,0,0,.85))),url(img/hero-pic-2.jpg);
-  background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.85)),url(img/hero-pic-2.jpg)
-}
-
-.section-hero-3 {
-  background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,.2)),to(rgba(0,0,0,.85))),url(img/hero-pic-3.jpg);
-  background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.85)),url(img/hero-pic-3.jpg)
-}
 
 .loading {
   opacity: 0;
@@ -261,14 +264,18 @@ h1 + h4 {
 /*basically the divs are hiddene until the matching section hero comes around */
 .section-hero-1-text h1,
 .section-hero-1-text p,
-.section-hero-1-text a,
 .section-hero-2-text h1,
 .section-hero-2-text p,
-.section-hero-2-text a,
 .section-hero-3-text h1,
-.section-hero-3-text p,
+.section-hero-3-text p {
+  display: none;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.section-hero-1-text a,
+.section-hero-2-text a,
 .section-hero-3-text a {
-  opacity: 0;
   display: none;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
@@ -284,7 +291,6 @@ h1 + h4 {
 .section-hero-3 .section-hero-3-text h1,
 .section-hero-3 .section-hero-3-text p,
 .section-hero-3 .section-hero-3-text a {
-  opacity: 1;
   display: block;
 }
 
@@ -483,7 +489,6 @@ ul {
 }
 
 .arrowkeys {
-  margin-top: 20px;
   margin-left: 3px;
 }
 
@@ -556,10 +561,13 @@ footer {
 
 
 .secondary-link {
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   padding: 10px;
   -webkit-transition: color 0.2s ease-in-out, border-color 0.3s ease-in-out;
   transition: color 0.2s ease-in-out, border-color 0.3s ease-in-out;
+  font-size: 17px;
+  font-weight: 800;
+  box-shadow: 0 4px 2px rgba(34, 34, 34, 0.31)
 }
 
 .secondary-link:hover,
@@ -628,7 +636,7 @@ float: right;
 /*reviews*/
 
 .siema {
-  padding: 10px;
+  padding-bottom: 10px;
 }
 
 .review {
@@ -704,7 +712,7 @@ float: right;
 
 
 .siema-services {
-    padding-bottom: 30px;
+    padding-bottom: 15px;
 }
 
 .services-slide {
