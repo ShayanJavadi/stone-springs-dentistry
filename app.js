@@ -137,7 +137,7 @@ function fadeIn(el) {
   el.style.opacity = 0;
 
   const tick = () => {
-    el.style.opacity = +el.style.opacity + 0.04;
+    el.style.opacity = +el.style.opacity + 0.05;
 
 
     if (+el.style.opacity < 1) {
