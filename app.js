@@ -136,7 +136,7 @@ class Slider {
 function fadeIn(el) {
   el.style.opacity = 0;
 
-  const tick = () => {
+  let tick = () => {
     el.style.opacity = +el.style.opacity + 0.05;
 
 

@@ -18,7 +18,7 @@
 }
 
 .section-gray {
-  background-color: #f8f7f7;
+  background-color: #f1f1f1;
 }
 
 .section-blue {
@@ -134,7 +134,7 @@ h1 + h4 {
 .wrap {
   width: 100%;
   height: 90vh;
-  background-color: rgba(119, 117, 117, 0.4);
+  background-color: rgba(24, 24, 24, 0.94);
 }
 
 .section-hero-1 {
@@ -619,9 +619,9 @@ float: right;
 }
 
 /*insurances*/
-.section-insurances p {
+/*.section-insurances p {
   text-align: center;
-}
+}*/
 
 .insurances img{
   max-width: 200px;
