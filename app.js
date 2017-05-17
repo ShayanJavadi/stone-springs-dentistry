@@ -28,6 +28,9 @@ let lastScrollTop = 0;
 class NavControl {
   constructor() {
     this.headerTop = document.querySelector(".header-top--js");
+    this.hamburger = document.querySelector(".hamburger");
+    this.cross = document.querySelector(".cross");
+    this.dropDown = document.querySelector(".drop-down-nav");
   }
 
   detectScroll() {
