@@ -103,13 +103,13 @@ h1,h2,h3,h4 {
   font-family: 'Lato', sans-serif;
   letter-spacing: 0;
   font-weight: 400;
-  font-style: normal
+  font-style: normal;
+  margin-bottom: .5em;
 }
 
 h1 {
   text-transform: capitalize;
   font-weight: 400;
-  padding-bottom: 15px;
 }
 
 h1 + h4 {
@@ -220,9 +220,9 @@ h1 + h4 {
   position: absolute;
   color: #fff;
   top: 53%;
-  left: 35%;
-  width: 900px;
-  margin: 0;
+  left: 49%;
+  width: 80%;
+  margin: 0 auto;
   padding: 0;
   z-index: 1000;
   text-align: left;
@@ -304,6 +304,79 @@ h1 + h4 {
 
 
 /*navbar*/
+ul li {
+  transition: color 0.2s;
+}
+
+.drop-down-nav-services .drop-down-column a {
+   transition: color 0.2s;
+}
+
+.drop-down-nav-services .drop-down-column a:hover,
+li a:hover {
+   color: #fff !important;
+}
+
+.drop-down-nav-services:hover .drop-down-column a,
+ul:hover li {
+  color: rgba(255, 255, 255, 0.60);
+}
+
+
+.ion-arrow-right-b,
+.ion-arrow-down-b {
+  position: relative;
+  top: 1.4px;
+  left: 5px;
+  font-size: 15px;
+  display: inline-block;
+}
+
+.ion-arrow-down-b {
+  display: none;
+  left: 5px;
+}
+
+.drop-down-column {
+  float: left;
+  background: #1372c3;
+  color: #fff;
+  font-size: 15px;
+}
+
+.hoverable-li a {
+  display: block;
+  padding: 12px 16px;
+}
+
+.hoverable-li:hover {
+  background: #1372c3;
+  color: #fff;
+  margin-right: 25.92px;
+}
+
+
+.hoverable-li .drop-down-nav-services {
+  display: none;
+}
+
+.hoverable-li:hover .drop-down-nav-services  {
+  display: block;
+}
+
+.hoverable-li:hover .ion-arrow-right-b  {
+  display: none;
+}
+.hoverable-li:hover .ion-arrow-down-b  {
+  display: inline-block;
+}
+
+
+
+.drop-down-nav-services {
+  position: absolute;
+  background-color: #0c3c65;
+}
 
 .mobile-nav {
   display: none;
@@ -357,7 +430,11 @@ header .row {
 
 nav li {
   display: inline-block;
-  padding-right: 30px;
+  margin-right: 30px;
+}
+
+nav li:last-of-type {
+  margin-right: 0;
 }
 
 
@@ -530,6 +607,10 @@ ul {
   font-weight: bold;
 }
 
+.inline-anchor-dark {
+  color: #0c3c65;
+}
+
 .primary-link {
   border: 1px solid #0c3c65;
   background-color: #0c3c65;
@@ -603,6 +684,7 @@ footer {
 }
 .section-map {
   font-size: 16px;
+  box-shadow: inset 0 2px 11px rgba(34, 34, 34, 0.10);
 }
 
 footer {
@@ -659,7 +741,8 @@ float: right;
 }
 
 .review {
-  width: 40%;
+  max-width: 450px;
+  width: 95%;
   background-color: #fff;
   margin: 0 auto;
   -webkit-box-shadow: 0 4px 2px rgba(34, 34, 34, 0.31);
@@ -816,37 +899,64 @@ header {
 
 /*single page*/
 
+.section-single-page {
+  margin: 8% 10%;
+  box-shadow: 0 1.2rem 3.6rem rgba(0,0,0,.2);
+  padding: 5% 8%;
+}
+
+.section-single-page p {
+  text-align: justify;
+  color: #637381;
+}
+
+.section-single-page p strong{
+  text-align: justify;
+  color: #0c3c65;
+}
+
+/*.page-with-no-hero h1,*/
+.page-with-no-hero h2,
+.page-with-no-hero h3,
+.page-with-no-hero h4{
+  font-weight: bold;
+}
+
+iframe {
+  background-color: #f1f1f1;
+}
+
+hr {
+  margin-top: 3.2rem;
+margin-bottom: 3.2rem;
+border-top: .1rem solid currentColor;
+color: #161d25;
+}
+}
+
 /*sectionabout*/
 
-.about-page-copy-1 {
-  max-height: 550px;
-  padding-top: 20px;
-}
-
-.about-page-copy-2 {
-  max-height: 550px;
-}
 
 .section-about p {
   text-align: justify;
 }
 
-.about-page-copy-1 img{
-  text-align: right;
+/*.about-page-copy-1 img{
+  text-align: center;
   height: 100%;
-  max-height: 550px;
+  max-height: 490px;
 }
 
 .about-page-copy-2 img{
   text-align: right;
   height: 100%;
   max-height: 400px;
-}
-
+}*/
+/*
 .about-page-picture-1 {
   height: 400px;
   width: auto;
-}
+}*/
 
 /*media queries*/
 
@@ -860,6 +970,10 @@ header {
   .address span {
     width: 145px;
     margin-bottom: 15px;
+  }
+
+.secondary-link{
+    font-size: 14px;
   }
 }
 
@@ -875,6 +989,10 @@ header {
 
 
 @media only screen and (max-width: 980px ) {
+  nav {
+    font-size: 80%;
+  }
+
   .logo {
     width: 300px;
     margin-top: 8px;
@@ -891,9 +1009,10 @@ header {
   }
 
   .logo {
-    margin-left: 33%;
+    margin: 0 auto;
     width: 350px;
     margin-top: 0;
+    display: block;
   }
 
   .header-top--js .small-4{
@@ -987,7 +1106,7 @@ header {
   }
 
   .mobile-anchor {
-    margin-top: 18px;
+    margin-top: 20px;
   }
 
   .hamburger-div {
@@ -1006,12 +1125,12 @@ header {
   .hamburger {
     font-size: 36px;
   }
-  .cross {
-    margin-right: 3px;
-  }
+
 
   .hamburger,
   .cross {
+    margin-right: 3px;
+
     display: none;
   }
 
