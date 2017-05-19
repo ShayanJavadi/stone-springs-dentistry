@@ -247,8 +247,24 @@
       <section class="section-map section-gray">
         <div class="row">
           <h1 class="text-center">Location &amp; Hours</h1>
-          <div class="large-6 columns">
+          <style>
+          .google-maps {
+                position: relative;
+                padding-bottom: 30%; // This is the aspect ratio
+                height: 0;
+                overflow: hidden;
+            }
+            .google-maps iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100% !important;
+                height: 100% !important;
+            }
+          </style>
+          <div class="large-6 columns google-maps">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12413.703173930773!2d-77.5464958!3d38.9371!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6e88e5afe0fdb8a2!2sStone+Springs+Dentistry!5e0!3m2!1sen!2sus!4v1494272123203" width="580" height="345" frameborder="0" style="border:0" allowfullscreen></iframe>
+
           </div>
           <div class="large-6 columns">
             <div class="text-center">
