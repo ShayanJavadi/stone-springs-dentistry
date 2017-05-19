@@ -525,6 +525,7 @@ ul {
 
 
 
+
 /* The element to be centered, can also be of any width and height */
 .verticaly-centered-list ul{
   display: inline-block;
@@ -682,9 +683,7 @@ footer {
 
 
 /*footer*/
-.footer-contact {
-  margin-left: 15px;
-}
+
 .section-map {
   font-size: 16px;
   -webkit-box-shadow: inset 0 2px 11px rgba(34, 34, 34, 0.10);
@@ -718,9 +717,7 @@ float: right;
 }
 
 
-.footer-time-closed {
-  padding-right: 10px;
-}
+
 
 /*insurances*/
 /*.section-insurances p {
@@ -944,6 +941,23 @@ color: #161d25;
 }
 
 
+/*google maps*/
+
+.google-maps {
+      position: relative;
+      padding-bottom: 30%; // This is the aspect ratio
+      height: 0;
+      overflow: hidden;
+  }
+  .google-maps iframe {
+    padding: 0 3%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
+  }
+
 /*media queries*/
 
 @media only screen and (max-width: 1200px ) {
@@ -1132,5 +1146,56 @@ color: #161d25;
   .verticaly-centered-list {
     height: auto;
   }
+}
 
+@media only screen and (max-width: 645px ) {
+  .footer-logo {
+    margin-left: 0;
+    padding-bottom: 0;
+    padding-right: 2px;
+    margin-top: 5px;
+  }
+
+   .footer-contact-phone,
+   .footer-address,
+   .footer-button-wrap{
+     text-align: center;
+  }
+
+  .ion-ios-telephone, .ion-ios-location, .ion-ios-clock {
+
+     margin-right: 0;
+
+  }
+
+  .footer-contact {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .footer-times-wrap {
+    margin-top: 60px;
+    padding: 0 30%;
+    width: 100%;
+  }
+
+  .footer-button-wrap {
+    display: none;
+  }
+
+  .footer-information {
+    font-size: 80%;
+  }
+}
+
+@media only screen and (max-width: 645px ) {
+  .footer-times-wrap {
+    padding: 0 20%;
+  }
+}
+
+@media only screen and (max-width: 305px ) {
+  .footer-times-wrap {
+    padding: 0 10%;
+  }
 }
