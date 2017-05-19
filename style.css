@@ -17,7 +17,10 @@
   outline: none;
 }
 
-
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 body {
     font-family: 'Lato', sans-serif;
@@ -457,11 +460,11 @@ nav ul{
   margin-top: 1px;
   width: 350px;
   max-width: none;
-  -webkit-transition: width 0.5s;
-  -webkit-transition: width 0.5s, -webkit-transform 0.5s;
-  transition: width 0.5s, -webkit-transform 0.5s;
-  transition: width 0.5s, transform 0.5s;
-  transition: width 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transition: width 0.2s;
+  -webkit-transition: width 0.2s, -webkit-transform 0.2s;
+  transition: width 0.2s, -webkit-transform 0.2s;
+  transition: width 0.2s, transform 0.2s;
+  transition: width 0.2s, transform 0.2s, -webkit-transform 0.2s;
 }
 
 img {
@@ -941,9 +944,22 @@ color: #161d25;
 
 /*sectionabout*/
 
+.about-image-2-mobile {
+  display: none;
+}
 
 .section-about p {
   text-align: justify;
+}
+
+.about-image-1 {
+  max-height: 540px;
+}
+
+.about-paragraph-1,
+.about-paragraph-2 {
+  margin: 0 auto;
+  width: 80%;
 }
 
 
@@ -1019,7 +1035,7 @@ color: #161d25;
 
   .logo {
     margin: 0 auto;
-    width: 350px;
+    width: 250px;
     margin-top: 0;
     display: block;
   }
@@ -1030,6 +1046,10 @@ color: #161d25;
 
   .header-top-mini {
 
+  }
+
+  .header-top {
+    height: 71px;
   }
 
   .nav-up {
