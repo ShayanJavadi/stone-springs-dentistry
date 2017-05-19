@@ -690,18 +690,6 @@ footer {
           box-shadow: inset 0 2px 11px rgba(34, 34, 34, 0.10);
 }
 
-footer {
-  font-size: 16px;
-  color: #fff;
-  height: 90px;
-  display: inline-block;
-  color: #fff;
-  background-color: #2D2D2D;
-  overflow: auto;
-  margin: 0 auto;
-  width: 100%;
-  vertical-align: middle;
-}
 
 .footer-address {
   margin-top: 30px;
