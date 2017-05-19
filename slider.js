@@ -100,7 +100,7 @@ function fadeIn(el) {
 
 
 // TODO: make fade in speed a thing
-slider = new Slider({
+let slider = new Slider({
   slideCount: 3,
   slideTime: 5000
 });

@@ -1,0 +1,29 @@
+{
+  "name": "stone-springs-dentistry",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShayanJavadi/stone-springs-dentistry.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShayanJavadi/stone-springs-dentistry/issues"
+  },
+  "homepage": "https://github.com/ShayanJavadi/stone-springs-dentistry#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1"
+  },
+
+  "scripts": {
+    "nav": "babel nav.js --watch --out-file src/nav.js",
+    "siema": "babel siema.js --watch --out-file src/siema.js",
+    "slider": "babel slider.js --watch --out-file src/slider.js"
+  }
+}

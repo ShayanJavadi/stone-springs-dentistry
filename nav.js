@@ -45,5 +45,5 @@ class NavControl {
   }
 }
 
-navTest = new NavControl;
+let navTest = new NavControl;
 navTest.detectScroll();
