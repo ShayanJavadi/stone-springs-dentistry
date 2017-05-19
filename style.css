@@ -692,9 +692,15 @@ footer {
 
 footer {
   font-size: 16px;
-  background-color: #313438;
   color: #fff;
-  height: 50px;
+  height: 90px;
+  display: inline-block;
+  color: #fff;
+  background-color: #2D2D2D;
+  overflow: auto;
+  margin: 0 auto;
+  width: 100%;
+  vertical-align: middle;
 }
 
 .footer-address {
@@ -985,6 +991,9 @@ color: #161d25;
   nav ul {
     margin-bottom: 2px;
   }
+  .footer-logo {
+    display: none;
+  }
 }
 
 
@@ -1148,7 +1157,17 @@ color: #161d25;
   }
 }
 
+@media only screen and (max-width: 750px ) {
+
+
+
+.google-maps {
+      padding-bottom: 55% ;
+  }
+}
+
 @media only screen and (max-width: 645px ) {
+
   .footer-logo {
     margin-left: 0;
     padding-bottom: 0;
