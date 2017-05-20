@@ -18,7 +18,10 @@ var siemaTwo = new Siema({
   duration: 700,
   loop: true,
   selector: siemaServices,
-  perPage: 3
+  perPage: {
+    768: 2,
+    1024: 3
+  }
 });
 
 document.querySelector('.prev-services').addEventListener('click', function () {
