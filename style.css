@@ -646,6 +646,7 @@ ul {
 footer {
   -webkit-box-shadow: inset 0 10px 10px -5px #0d1116;
           box-shadow: inset 0 10px 10px -5px #0d1116;
+          clear: both;
 }
 
 .section-map .row:first-of-type {
@@ -1272,6 +1273,13 @@ color: #161d25;
     padding: 0 20%;
   }
 }
+
+@media only screen and (max-width: 640px ) {
+  .footer-contact {
+    clear: both;
+  }
+}
+
 
 @media only screen and (max-width: 530px ) {
   h1 {
