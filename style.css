@@ -916,7 +916,7 @@ header {
 
 .section-single-page p {
   text-align: justify;
-  color: #637381;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .section-single-page p strong{
@@ -953,7 +953,8 @@ color: #161d25;
 }
 
 .about-image-1 {
-  max-height: 540px;
+  max-height: 440px;
+  margin-bottom: 20px;
 }
 
 .about-paragraph-1,
@@ -1000,6 +1001,11 @@ color: #161d25;
 }
 
 @media only screen and (max-width: 1025px ) {
+
+  h1 {
+    font-size: 230%;
+  }
+
   nav {
     font-size: 90%;
   }
@@ -1068,6 +1074,9 @@ color: #161d25;
 
 
 @media only screen and (max-width: 910px ) {
+  h1 {
+    font-size: 190%;
+  }
 
   nav {
     height: 60px;
@@ -1186,6 +1195,27 @@ color: #161d25;
   }
 }
 
+@media only screen and (max-width: 690px ) {
+  .hero-text-container p,
+  .hero-text-container a,
+  .hero-text-container h1 {
+    text-align: center;
+  }
+
+  .hero-text-container {
+    left: 50%;
+    width: 100%;
+  }
+
+  .hero-text-container p,
+  .hero-text-container a,
+  .hero-text-container h1 {
+    padding-left: 0;
+  }
+}
+
+
+
 @media only screen and (max-width: 645px ) {
 
   .footer-logo {
@@ -1230,6 +1260,14 @@ color: #161d25;
     padding: 0 20%;
   }
 }
+
+@media only screen and (max-width: 530px ) {
+  h1 {
+    font-size: 150%;
+
+  }
+}
+
 
 @media only screen and (max-width: 305px ) {
   .footer-times-wrap {
