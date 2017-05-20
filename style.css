@@ -643,15 +643,7 @@ ul {
   background-color: #0c3c65;
 }
 
-footer {
-  -webkit-box-shadow: inset 0 10px 10px -5px #0d1116;
-          box-shadow: inset 0 10px 10px -5px #0d1116;
-          clear: both;
-}
 
-.section-map .row:first-of-type {
-  margin-bottom: 30px;
-}
 
 .section-map h1 {
   padding-bottom: 40px;
@@ -713,10 +705,18 @@ footer {
   display: inline-block;
   color: #fff;
   background-color: #2D2D2D;
-  overflow: auto;
-  margin: 0 auto;
+
   width: 100%;
-  vertical-align: middle;
+
+    -webkit-box-shadow: inset 0 10px 10px -5px #0d1116;
+            box-shadow: inset 0 10px 10px -5px #0d1116;
+            clear: both;
+
+
+}
+
+.map-row-1 {
+  margin-bottom: 50px;
 }
 
 .footer-address {
