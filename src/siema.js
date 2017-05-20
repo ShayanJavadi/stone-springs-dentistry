@@ -12,17 +12,13 @@ document.querySelector('.prev').addEventListener('click', function () {
 document.querySelector('.next').addEventListener('click', function () {
   return mySiema.next();
 });
-
 //siema scroller for services
 var siemaServices = document.querySelector('.siema-services');
 var siemaTwo = new Siema({
   duration: 700,
   loop: true,
   selector: siemaServices,
-  perPage: {
-   768: 2,
-   1024: 3,
- },
+  perPage: 3
 });
 
 document.querySelector('.prev-services').addEventListener('click', function () {

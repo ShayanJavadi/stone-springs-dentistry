@@ -52,6 +52,10 @@ section {
   padding: 75px 0 60px;
 }
 
+section:last-of-type {
+  padding-bottom: 0;
+}
+
 p {
   font-style: normal;
   font-size: 16px;
@@ -411,7 +415,12 @@ nav {
   background-color: #0c3c65;
   -webkit-box-shadow: 0 2px 2px rgba(34, 34, 34, 0.71);
           box-shadow: 0 2px 2px rgba(34, 34, 34, 0.71);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.current-page {
   color: #fff;
+  text-shadow: #EEEE00 0 0 10px;
 }
 
 
@@ -451,7 +460,7 @@ nav li:last-of-type {
 
 nav ul{
   padding-left: 120px;
-  color: #fff;
+  color: rgba(#ffffff, 0.91);
 }
 
 .logo {
@@ -637,7 +646,10 @@ ul {
 footer {
   -webkit-box-shadow: inset 0 10px 10px -5px #0d1116;
           box-shadow: inset 0 10px 10px -5px #0d1116;
+}
 
+.section-map .row:first-of-type {
+  margin-bottom: 30px;
 }
 
 .section-map h1 {

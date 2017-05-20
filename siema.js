@@ -6,7 +6,7 @@ const mySiema = new Siema({
 
 document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
 document.querySelector('.next').addEventListener('click', () => mySiema.next());
-
+mySiema.next();
 //siema scroller for services
 const siemaServices = document.querySelector('.siema-services');
 const siemaTwo = new Siema({
