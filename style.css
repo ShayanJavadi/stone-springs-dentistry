@@ -1340,6 +1340,9 @@ color: #161d25;
 
   }
 
+.section-about p {
+  font-size: 14px;
+}
 
 .google-maps {
       padding-bottom: 55% ;
@@ -1347,7 +1350,9 @@ color: #161d25;
 }
 
 @media only screen and (max-width: 690px ) {
-
+   p {
+    font-size: 13px;
+  }
     h4 {
       font-size: 100%;
     }
@@ -1458,6 +1463,9 @@ color: #161d25;
     font-size: 150%;
 
   }
+   p {
+    font-size: 12px;
+  }
   .row-1 span,
   .row-2 span {
 
@@ -1467,12 +1475,25 @@ color: #161d25;
 
 }
 
+@media only screen and (max-width: 530px ) {
+  h1 {
+    font-size: 145%;
+
+  }
+
+
+}
+
 @media only screen and (max-width: 460px ) {
   .row-1 span,
   .row-2 span {
 
     font-size: 9px;
 
+  }
+
+   p {
+    font-size: 9px;
   }
 }
 @media only screen and (max-width: 420px ) {
