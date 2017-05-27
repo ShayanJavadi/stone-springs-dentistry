@@ -137,7 +137,7 @@ h1 + h4 {
 .section-hero-2,
 .section-hero-3 {
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   width: 100%;
   height: 90vh;
   border-radius: 3px;
@@ -311,6 +311,13 @@ h1 + h4 {
 
 
 /*navbar*/
+.inline-block {
+  display: inline-block;
+}
+
+.mobile-nav-schedule a{
+  display: none ;
+}
 ul li {
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
@@ -365,7 +372,8 @@ ul:hover li {
 }
 
 
-.hoverable-li .drop-down-nav-services {
+.hoverable-li .drop-down-nav-services,
+.mobile-clickable-li .drop-down-nav-services {
   display: none;
 }
 
@@ -587,7 +595,7 @@ ul {
 
 .ion-android-arrow-dropleft-circle,
 .ion-android-arrow-dropright-circle {
-  font-size: 33px;
+  font-size: 36px;
   color: #0c3c65;
   display: block;
   width: 40px;
@@ -946,9 +954,32 @@ header {
   font-weight: bold;
 }
 
+.welcoming-h3 {
+  font-size: 160%;
+}
+
+.row-1 span,
+.row-2 span {
+  display: block;
+
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.row-1 span:before,
+.row-2 span:before {
+  content: "• ";
+  color: #0c3c65; /* or whatever color you prefer */
+  padding-right: 1px;
+}
+
+
 iframe {
   background-color: #f1f1f1;
 }
+
+
 
 hr {
   margin-top: 3.2rem;
@@ -998,7 +1029,7 @@ color: #161d25;
 
   /*contact*/
   .section-contact form {
-    padding: 2% 20%;
+    padding: 2% 10%;
   }
 
   .section-contact h1 + p {
@@ -1006,6 +1037,19 @@ color: #161d25;
   }
 
 /*media queries*/
+
+@media only screen and (max-width: 1402px) {
+  .appointment-insurances .large-6 {
+    width: 100%;
+  }
+
+  .section-hero-1,
+  .section-hero-2,
+  .section-hero-3 {
+    background-attachment: scroll;
+
+  }
+}
 
 @media only screen and (max-width: 1200px ) {
   .header-top {
@@ -1098,8 +1142,79 @@ color: #161d25;
 
 
 @media only screen and (max-width: 910px ) {
+  .hoverable-li .drop-down-nav-services {
+    display: inline-block;
+    height: 0px;
+    transition: height 0.3s;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+  .hoverable-li .drop-down-nav-services .drop-down-column {
+    height: 0;
+    transition: height 0.3s;
+    overflow: hidden;
+  }
+
+  .hoverable-li:hover .drop-down-nav-services,
+  .hoverable-li-active .drop-down-nav-services {
+    display: block;
+    visibility: visible;
+    height: 57%;
+    top: 64%;
+    width: 100%;
+    background-color: #1372c3;
+  }
+
+  .hoverable-li-active {
+    background: #1372c3;
+    color: #fff;
+  }
+  .hoverable-li:hover .drop-down-nav-services .drop-down-column,
+  .hoverable-li-active .drop-down-nav-services .drop-down-column{
+    height: 100%;
+
+  }
+
+.hoverable-li-active .ion-arrow-down-b  {
+    display: inline-block;
+  }
+
+.hoverable-li-active .ion-arrow-right-b  {
+      display: none;
+    }
+
+    .hoverable-li-active a{
+    color: #fff !important;
+}
+
+  .hoverable-li {
+    padding: 0;
+  }
+
+  .drop-down-column + .drop-down-column {
+    float: right;
+  }
+
+  .drop-down-column {
+    width: 50%;
+  }
+
+  .hoverable-li:hover {
+     margin-right: 0;
+  }
+
   h1 {
     font-size: 190%;
+  }
+
+  h4 {
+    font-size: 110%;
+  }
+
+  h3,
+  .welcoming-h3 {
+    font-size: 130%;
   }
 
   nav {
@@ -1161,6 +1276,10 @@ color: #161d25;
     width: 100%;
   }
 
+  .mobile-nav-social {
+    margin-left: 10px;
+  }
+
   .mobile-nav div {
     display: inline-block;
   }
@@ -1172,6 +1291,8 @@ color: #161d25;
   .mobile-anchor {
     margin-top: 20px;
   }
+
+
 
   .hamburger-div {
     display: inline-block;
@@ -1212,6 +1333,12 @@ color: #161d25;
 
 @media only screen and (max-width: 750px ) {
 
+  .row-1 span,
+  .row-2 span {
+
+    font-size: 14px;
+
+  }
 
 
 .google-maps {
@@ -1220,6 +1347,16 @@ color: #161d25;
 }
 
 @media only screen and (max-width: 690px ) {
+
+    h4 {
+      font-size: 100%;
+    }
+
+    h3,
+    .welcoming-h3 {
+      font-size: 120%;
+    }
+
   .hero-text-container p,
   .hero-text-container a,
   .hero-text-container h1 {
@@ -1241,6 +1378,14 @@ color: #161d25;
 
 
 @media only screen and (max-width: 645px ) {
+
+    .row-1 span,
+    .row-2 span {
+
+      font-size: 12px;
+
+    }
+
 
   .footer-logo {
     margin-left: 0;
@@ -1289,6 +1434,22 @@ color: #161d25;
   .footer-contact {
     clear: both;
   }
+
+  .review-paragraph {
+    font-size: 10px;
+  }
+  .row-1 span,
+  .row-2 span {
+
+    font-size: 11px;
+
+  }
+
+  h3,
+  .welcoming-h3 {
+    font-size: 110%;
+  }
+
 }
 
 
@@ -1297,11 +1458,71 @@ color: #161d25;
     font-size: 150%;
 
   }
+  .row-1 span,
+  .row-2 span {
+
+    font-size: 10px;
+
+  }
+
+}
+
+@media only screen and (max-width: 460px ) {
+  .row-1 span,
+  .row-2 span {
+
+    font-size: 9px;
+
+  }
+}
+@media only screen and (max-width: 420px ) {
+  .row-1 span,
+  .row-2 span {
+
+    font-size: 8px;
+
+  }
+}
+
+@media only screen and (max-width: 375px ) {
+  .row-1 span,
+  .row-2 span {
+
+    font-size: 7px;
+
+  }
+}
+
+
+@media only screen and (max-width: 350px ) {
+  .row-1 span,
+  .row-2 span {
+
+    font-size: 5px;
+
+  }
 }
 
 
 @media only screen and (max-width: 305px ) {
+  .mobile-anchor a {
+    display: none;
+  }
+
   .footer-times-wrap {
     padding: 0 10%;
+  }
+
+  .mobile-nav-schedule a{
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+
+  .mobile-nav-schedule a:hover{
+    color: #222 !important;
+  }
+
+  .drop-down-nav.active {
+    height: 315px;
   }
 }
