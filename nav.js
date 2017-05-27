@@ -8,9 +8,16 @@ class NavControl {
     this.hamburger = document.querySelector(".hamburger");
     this.cross = document.querySelector(".cross");
     this.dropDown = document.querySelector(".drop-down-nav");
+    this.mobileHoverableLi = document.querySelector(".mobile-hoverable-li--js");
     this.hamburger.addEventListener('click', () => this.mobileNavDown());
     this.cross.addEventListener('click', () => this.mobileNavUp());
+    this.mobileHoverableLi.addEventListener('click', () => this.mobileHoverableLiToggle());
   }
+
+  mobileHoverableLiToggle() {
+    this.mobileHoverableLi.classList.toggle('hoverable-li-active');
+  }
+
 
   mobileNavDown() {
     this.hamburger.classList.remove("active");

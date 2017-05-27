@@ -13,7 +13,7 @@ const siemaTwo = new Siema({
   loop: true,
   selector: siemaServices,
   perPage: {
-   768: 2,
+   540: 2,
    1024: 3,
   }
 })

@@ -17,15 +17,24 @@ var NavControl = function () {
     this.hamburger = document.querySelector(".hamburger");
     this.cross = document.querySelector(".cross");
     this.dropDown = document.querySelector(".drop-down-nav");
+    this.mobileHoverableLi = document.querySelector(".mobile-hoverable-li--js");
     this.hamburger.addEventListener('click', function () {
       return _this2.mobileNavDown();
     });
     this.cross.addEventListener('click', function () {
       return _this2.mobileNavUp();
     });
+    this.mobileHoverableLi.addEventListener('click', function () {
+      return _this2.mobileHoverableLiToggle();
+    });
   }
 
   _createClass(NavControl, [{
+    key: "mobileHoverableLiToggle",
+    value: function mobileHoverableLiToggle() {
+      this.mobileHoverableLi.classList.toggle('hoverable-li-active');
+    }
+  }, {
     key: "mobileNavDown",
     value: function mobileNavDown() {
       this.hamburger.classList.remove("active");
