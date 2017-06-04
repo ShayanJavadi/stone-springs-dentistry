@@ -16,7 +16,9 @@
           box-sizing: border-box;
   outline: none;
 }
-
+.title {
+  text-transform: capitalize;
+}
 html, body {
     max-width: 100%;
     overflow-x: hidden;
